@@ -45,8 +45,10 @@ A simple algorithm is used which has a sample sudoku and can take input from use
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+|ID	 |            Description	           |     Status    |
+|----|-----------------------------------|---------------|
+|HL1	|Contain sample and take User Sudoku|	  Implemented |
+|HL2	|Print the solution if exist	       |   Implemented |
 
 
 ##  Low level Requirements:
