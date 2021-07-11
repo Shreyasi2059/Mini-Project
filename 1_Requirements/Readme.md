@@ -1,48 +1,46 @@
 # Requirements
 ## Introduction
- The Dinosaur Game, also known as the T-Rex Game, Steve the Jumping Dinosaur, or Dino Runner and initially codenamed Project Bolan, is a built-in browser game in the Google Chrome Web Browser. The game was created by Sebastien Gabriel in 2014, and can be accessed by hitting the space bar when in offline mode on Google Chrome.
+ Sudoku is a puzzle that has enjoyed worldwide popularity since 2005. To solve a Sudoku puzzle, one needs to use a combination of logic and trial-and-error. More math is involved behind the scenes: combinatorics used in counting valid Sudoku grids, group theory used to describe ideas of when two grids are equivalent, and computational complexity with regards to solving Sudokus
 
 ## Research
-A simple and easy-to-use GUI is provided for better gameplay. The gameplay design is so simple that the user won’t find it difficult to use and understand. 
-Benefits
-Tic-tac-toe Game offers a few benefits. Here are just a few of them:
-Developement of Coordination
-Tic-tac-toe helps to develop coordination, fine motor skills and visual skills.
+Sudoku has been a popular puzzle game among kids, youngsters, older people. They are in newspapers, magazines, mobile games. The uniqueness of this game makes it so challenging and fun. I have been a fan of this game as a child, even now I like to play Sudoku once in a while and also tell other people about it.
+## Benefits
+### Improves concentration
+It is impossible to solve a Sudoku puzzle without concentration. Since this game requires logical thinking, an interruption can break the chain of thought and force the player to restart their analysis. 
+### Helps to reduce anxiety and stress
+The two big bad words of today’s society can be tamed by a simple numbers puzzle. One of the benefits of Sudoku is that it requires the player to concentrate on the grid and use logical thinking to find the solution for each cell. While doing this, the brain becomes fully focus on the task at hand rather than the source of stress and anxiety.
+### Promotes a healthy mindset
+Sudoku is a puzzle with simple, easy to understand rules that any kid can try. The need to engage in logical thinking to fill the grid correctly plus the process of trial and error they must apply will naturally and unconsciously help to develop their problem-solving skills.
 
-Mannerism
-It helps one to learn how to follow rules and take turns.
-
-Concentration
-It can help to improve a person's concentration as well as strategic thinking
+Furthermore, the challenge of solving what to a kid will seem like an easy and boring game also helps them to engage more intensely to finish it quickly and improves their concentration skills.
 ## Cost and Features and Timeline
-Time	Feature	Cost
-2014-current	Due to Digitalisation, this game is free for everyone on chrome.	Cost-effective
+No cost required to play the game.
+
+### Features
+Solve a sudoku problem.
+User can input new sudoku values and will output solution for it.
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT-Sample](swot.png)
 
-# 4W&#39;s and 1&#39;H
+# 4W's and 1'H
 
 ## Who:
 
-- Anyone can play this game.
-- Also, it ia available offline.
-
+This game can be played by anyone from children to older people.
 ## What:
 
-This game is for recreational purposes.
-
+Sudoku is a brain teaser game, originated in Japan, and has globally become a popular game. This program solves sudoku problem given by user also has a sample problem in it.
 ## When:
 
-This game can be played whenever you are feeling bored or you want to pass your time.
+It is made as a part of LTTS Step-in Mini Project work.
 
 ## Where:
 
-It can be played in chrome.
-
+It's made using Visual Studio Code IDE on Windows 10.
 ## How:
-
+A simple algorithm is used which has a sample sudoku and can take input from user and give the result.
 **TBD**
 
 # Detail requirements
