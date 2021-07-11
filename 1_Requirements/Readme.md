@@ -50,10 +50,10 @@ A simple algorithm is used which has a sample sudoku and can take input from use
 
 
 ##  Low level Requirements:
-ID Description	Status
-LL1	Sample and User sudoku in main()	Implemented
-LL2	Call to solveSudoku()	Implemented
-LL3	Check sudoku using safeSudoku() before solving	Implemented
-LL4	solveSudoku() self call to fill the empty spaces	Implemented
-LL5	Then print the solution, if exist	Implemented
+|ID  |                       Description               |	     Status      |
+|LL1	|Sample and User sudoku in main()	                |   Implemented    |
+|LL2	|Call to solveSudoku()	                           |   Implemented    |
+|LL3	|Check sudoku using safeSudoku() before solving	  |   Implemented    |
+|LL4	|solveSudoku() self call to fill the empty spaces	|   Implemented    |
+|LL5	|Then print the solution, if exist	               |   Implemented    |
 
