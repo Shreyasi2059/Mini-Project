@@ -22,7 +22,7 @@ User can input new sudoku values and will output solution for it.
 ## Defining Our System
     -- TBD
 ## SWOT ANALYSIS
-![SWOT-Sample](swot.png)
+![SWOT-Sample](!swot.png)
 
 # 4W's and 1'H
 
