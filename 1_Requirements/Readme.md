@@ -64,7 +64,7 @@ Let the two players be named as Tom and Jerry. For every continuous subsequence 
 
 We need to find the continuous subsequences of candies stacks that will make Tom win if both of them play optimally. The number of candies of each stack will be recovered after the game ends for each subsequences.
 ## SWOT ANALYSIS
-![SWOT-Sample](<img src="https://user-images.githubusercontent.com/80656121/114064517-5c4e3b00-98b7-11eb-95cd-4feb7a541d2b.PNG">)
+<img src="https://user-images.githubusercontent.com/80656121/114064517-5c4e3b00-98b7-11eb-95cd-4feb7a541d2b.PNG">
 
 # 4W's and 1'H
 
