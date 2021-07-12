@@ -1,1 +1,1 @@
-# Sudoku
+# The Candy Game
