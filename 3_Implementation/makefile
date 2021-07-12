@@ -1,61 +1,61 @@
 
-PROJ_NAME = Sudoku
-TEST_PROJ_NAME = Test_$(PROJ_NAME)
+# Name of the project
+PROJECT_NAME = candy
 
-BUILD_DIR = Build
+# Output directory
+BUILD = build
 
-TEST_SRC = test_sudoku.c\
-unity/unity.c
+# All source code files
+SRC = project_main.c\
+src/candy_operations.c
 
+# All test source files
+TEST_SRC = src/candy_operations.c\
+test/test_candy_operations.c\
+unity/unity.c\
 
-SRC = src/printSudoku.c\
-src/safeSudoku.c\
-src/solveSudoku.c
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
-INC = -Iinc\
--Iunity
+# All include folders with header files
+INC	= -Iinc\
+-Iunity\
 
+#Library Inlcudes
+#INCLUDE_LIBS = 
+INCLUDE_LIBS = -lcunit
 
+# Project Output name
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
-ifdef OS
-RM = del /q
-FixPath = $(subst /,\,$1)
-EXEC = exe
-else
-	ifeq ($(shell uname), Linux)
-     RM = rm -rf
-     FixPath = $1
-     EXEC = out
-   endif
-endif
+# Document files
+DOCUMENTATION_OUTPUT = documentation/html
 
-.PHONY : all run clean doc
+# Default target built
+$(PROJECT_NAME):all
 
-all:$(BUILD_DIR)
-	gcc main.c $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+# Run the target even if the matching name exists
+.PHONY: run clean test doc all
 
-run: all
-	$(call FixPath,$(BUILD_DIR)/$(PROJ_NAME).$(EXEC))
+all: $(SRC) $(BUILD)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
-test: $(SRC) $(TEST_SRC)
-	gcc $^ $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
+# Call `make run` to run the application
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT).out
 
-coverage:${PROJECT_NAME}
-	gcc -fprofile-arcs -ftest-coverage $(SRC) $(INC) -o $(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	$(call FixPath,$(BUILD_DIR)/$(TEST_PROJ_NAME).$(EXEC))
-	gcov -a $(SRC)
-valgrind:
-	valgrind ./$(TEST_PROJ_NAME).$(EXEC)	
-
-
-
+# Document the code using Doxygen
 doc:
-	make -C doc
-$(BUILD_DIR):
-	mkdir $(BUILD_DIR)
+	make -C ./documentation
 
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+
+# Remove all the built files, invoke by `make clean`
 clean:
-	$(RM) $(call FixPath,$(BUILD_DIR)/*)
-	make clean -C doc
-	rmdir $(BUILD_DIR) doc/html
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+
+# Create new build folder if not present
+$(BUILD):
+	mkdir build
