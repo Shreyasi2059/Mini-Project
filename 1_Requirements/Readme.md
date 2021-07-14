@@ -15,6 +15,8 @@ A terminal position is one from which no moves are possible. Then one of the pla
 Or there is a tie depending on the rules of the combinatorial game, the game could end up in a tie.
 The only thing that can be stated about the combinatorial game is that the game should end at some point and should not be stuck in a loop.
 The diagram shows the classification of Combinatorial Game
+
+
 <img src="https://user-images.githubusercontent.com/80656121/114136449-55abdc00-9928-11eb-9494-0f9cf4538649.PNG">
 
 
@@ -27,6 +29,8 @@ The Nim Game is outlined as follows:-
 “A certain number of piles is given in which each pile holds some numbers of stones. In each turn, a player can select only one pile and remove any number of stones (at least one) from that pile. The player who cannot move is considered to lose the game that is, one who take the last stone is the winner. ”
 
 Let's consider that there are two players- A and B, and originally there are three stacks of coins initially having 3, 4, 5 coins in each of them as shown below. Assume that first move is made by A. The below figure illustrates the whole game play.
+
+
 <img src="https://user-images.githubusercontent.com/80656121/114065160-fada9c00-98b7-11eb-89a1-457d011f8fe3.PNG">
 
 
@@ -35,6 +39,8 @@ Given, A made the first move; A Won the match.
 Was A having a strong hold in this game ? or was the player having some edge over B by starting first ?
 
 Let us see what happens with B starting first instead of A but with the same configuration of the piles as above.
+
+
 <img src="https://user-images.githubusercontent.com/80656121/114065261-16de3d80-98b8-11eb-8498-bb29a9018db7.PNG">
 
 
@@ -47,6 +53,8 @@ So does the player who starts the game first win all the times?
 Let us play the game again, starting from A , and this time with a different initial configuration of piles. The piles have 1, 4, 5 coins initially.
 
 Let us examine will A win again as he/she has started first. 
+
+
 <img src="https://user-images.githubusercontent.com/80656121/114065299-22c9ff80-98b8-11eb-8f30-42b7035bf674.PNG">
 
 
@@ -72,6 +80,8 @@ Let the two players be named as Tom and Jerry. For every continuous subsequence 
 
 We need to find the continuous subsequences of candies stacks that will make Tom win if both of them play optimally. The number of candies of each stack will be recovered after the game ends for each subsequences.
 ## SWOT ANALYSIS
+
+
 <img src="https://user-images.githubusercontent.com/80656121/114064517-5c4e3b00-98b7-11eb-95cd-4feb7a541d2b.PNG">
 
 
