@@ -23,19 +23,15 @@ Folder             | Description
 
 PS No. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-`ABC` | 12345678  | Feature A, B etc    | X No     | X No   |X No   |X No     
-`DEF` | 12345678  | Feature C, D etc    | X No     | X No   |X No   |X No     
+302457 | Shreyasi Chaudhuri  | Entire Project (Requirements, Design, Implementation and TestPlanAndOutput)   | Makefile, UML Diagrams and Unity    | All Issues Resolved   |4 Function Based and 10 Overall Test cases   |All Passed     
+    
 
 ## Challenges Faced and How Was It Overcome
 
-1. ABC
-2. BCD
-3. ...
-4. ...
+1. Creation of Makefile-Resolved by studying from ltts modules and outside sources
+2. Creation of unity-Resolved by studying and researching
+3. Creation of UML diagrams - Resolved by researching about them.
 
-## Learning Resources
-1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
-2. [markdownBasics](https://guides.github.com/features/mastering-markdown/)
-3. [git inspector](https://github.com/ejwa/gitinspector.git)
-4. [github workflow](https://docs.github.com/en/actions/learn-github-action)
+
+
 
